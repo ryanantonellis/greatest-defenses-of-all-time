@@ -1,0 +1,23 @@
+---
+title: "The Greatest NFL Defenses"
+author: "Ryan Antonellis"
+date: "October 19, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(devtools)
+library(knitr)
+library(dplyr)
+library(gov.1005.data)
+```
+
+## Defenses
+
+```{r}
+read_excel("2000 ravens defensive stats.xlsx")
+```
+
+## This is not my actual data.  This is a preliminary display of both offensive and defensive data from the 2000 Baltimore Ravens Super Bowl championship team.  I plan to use strictly defensive data from 15 to 20 of the "supposed" top defenses in the history of the league.  The data will be transferred directly to excel files through the site: https://www.pro-football-reference.com/teams . 
