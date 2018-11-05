@@ -15,10 +15,11 @@ library(dplyr)
 library(gov.1005.data)
 ```
 
-## Defenses
+## Draft Data
 
 ```{r}
-read_excel("2000 ravens defensive stats.xlsx")
+data_2018 <- read_csv("2018data.txt") %>%
+  select(X4, X28)
 ```
 
 ## This is not my actual data.  This is a preliminary display of both offensive and defensive data from the 2000 Baltimore Ravens Super Bowl championship team.  I plan to use strictly defensive data from 15 to 20 of the "supposed" top defenses in the history of the league.  The data will be transferred directly to excel files through the site: https://www.pro-football-reference.com/teams . 
